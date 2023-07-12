@@ -7,6 +7,7 @@ import configureStore from './store';
 import { Provider } from 'react-redux';
 import { populateProduce } from './store/produce';
 import { addItem } from './store/cart';
+import { removeItem } from './store/cart';
 
 const store = configureStore();
 
@@ -14,6 +15,7 @@ if (process.env.NODE_ENV !== "production") {
   window.store = store;
   window.populateProduce = populateProduce;
   window.addItem = addItem;
+  window.removeItem = removeItem;
 }
 
 function Root() {
