@@ -1,6 +1,6 @@
 import { addItem } from "../../store/cart";
 import { useDispatch } from 'react-redux';
-
+import CartItem from "../Cart/CartItem";
 
 function ProduceDetails({ produce }) {
   const cartItem = {};
